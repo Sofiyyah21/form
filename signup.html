@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form>
+      <!-- Full Name + Email in one row -->
+      <div class="form-row">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <!-- Password + Confirm Password in one row -->
+      <div class="form-row">
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+
+      <div class="form-row">
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="date" required>
+      </div>
+
+      <input type="text" placeholder="Address" required>
+
+      <!-- Radio Buttons -->
+      <div class="form-group">
+        <p class="label">Gender:</p>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <textarea placeholder="Tell us about yourself..." rows="2"></textarea>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-group checkbox">
+        <label>
+          <input type="checkbox" required>
+          I agree to the Terms & Conditions
+        </label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="switch-link">
+      ➤ Already have an account? <a href="login.html">Sign in</a>
+    </p>
+  </div>
+</body>
+</html>
